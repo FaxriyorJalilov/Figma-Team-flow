@@ -6,6 +6,9 @@
   font-family: "Inter", sans-serif;
   font-family: "Josefin Sans", sans-serif;
 }
+a {
+  text-decoration: none;
+}
 .container_hero {
   margin: 0 auto;
   max-width: 1440px;
@@ -391,6 +394,7 @@
 }
 .survey {
   display: flex;
+  /* flex-wrap: wrap-reverse; */
 }
 .surver_tex h3 {
   color: #35414b;
@@ -488,6 +492,7 @@
 .your_icon img {
   padding: 19.2px;
 }
+
 .your_work h3 {
   color: #35414b;
   font-family: "Inter", sans-serif;
@@ -577,6 +582,12 @@
   font-weight: 500;
   line-height: 16px;
   margin-bottom: 29.06px;
+}
+.hours_worked_img img {
+  max-width: 384px;
+}
+.hours_worked_img {
+  display: none;
 }
 .hours_text p {
   color: #4e5a65;
@@ -805,7 +816,7 @@
 }
 .use_text h2 {
   color: #fff;
-  max-width: 423px;
+  /* max-width: 423px; */
   font-family: "Inter", sans-serif;
   font-size: 32px;
   font-weight: 600;
@@ -813,13 +824,13 @@
 }
 .use_box {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   align-items: center;
-  gap: 143px;
+  gap: 113px;
 }
 .app {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 24px;
 }
 footer {
@@ -876,12 +887,15 @@ footer h3 {
   padding: 24px 0px 24px 0px;
 }
 .footer_line {
-  width: 1440px;
+  /* width: 1440px; */
   height: 1px;
   background-color: #fff;
 }
 .address_right a img {
   margin-left: 24px;
+}
+.jorge_jorge {
+  display: none;
 }
 
 @media (max-width: 414px) {
@@ -953,26 +967,58 @@ footer h3 {
   .timeline_hero_img {
     display: block;
   }
+  .timeline_hero_img img {
+    max-width: 384px;
+  }
+  .hours_worked_img {
+    display: block;
+    margin-top: 20px;
+    max-width: 100%;
+  }
+  .img_line,
+  .hours,
+  .projects_box {
+    display: none;
+  }
+
+  .column {
+    margin: 0 auto;
+
+    width: 100%;
+    height: 8px;
+    margin-top: -17px;
+  }
   .timeline_hero,
   .silva {
     display: none;
   }
-  .your_work_box,
-  .your_icon {
-    text-align: center;
+  .massag,
+  .heirarchy,
+  .group {
+    display: none;
   }
-  .your_icon img {
+  .your_work_box > div {
     text-align: center;
+    margin: 0 auto;
+  }
+  .your_icon {
+    margin: 0 auto;
   }
   .rectangle_right {
     text-align: center;
     margin: 0 auto;
   }
-  .use_text h2 {
-    max-width: 322px;
-    text-align: center;
-    font-size: 24px;
-    line-height: 32px;
+  .use_box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .app {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .survey {
+    display: flex;
+    flex-wrap: wrap-reverse;
   }
   .address_right {
     display: none;
@@ -986,5 +1032,19 @@ footer h3 {
   }
   .footer_links {
     display: inline;
+  }
+  .jorge_jorge {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .img_box {
+    display: none;
+  }
+  .worked_left {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .worked_left button {
   }
 }
